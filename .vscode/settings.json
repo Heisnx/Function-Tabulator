@@ -1,6 +1,32 @@
+/*
+ * [ Function Tabulator ]
+ * ----------------------
+ * File Name    : settings.json
+ * Author       : Ali Allahverdiyev
+ * Date Created : 15/10/2024
+ * Version      : v1.0.0
+ * Description  : 
+ * This file contains settings for the VSCode development environment.
+ * It defines file associations, editor formatting options, and other preferences.
+ *
+ * Notes:
+ *   - C/C++ extensions are recommended for optimal experience.
+*/
+
 {
     "files.associations": {
         "utils.h": "c",
         "stdio.h": "c"
-    }
+    },
+    "C_Cpp.default.includePath": [
+        "${workspaceFolder}/include",
+        "${workspaceFolder}/src",
+        "${workspaceFolder}/**"
+    ],
+    "C_Cpp.default.defines": [],
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+    "C_Cpp.intelliSenseEngine": "default",
+    "editor.formatOnSave": true,
+    "C_Cpp.errorSquiggles": "enabled",
+    "C_Cpp.default.compilerPath": "C:\\msys64\\ucrt64\\bin\\gcc.exe"
 }

@@ -1,32 +1,45 @@
+/*
+ * [ Function Tabulator ]
+ * ----------------------
+ * File Name    : launch.json
+ * Author       : Ali Allahverdiyev
+ * Date Created : 15/10/2024
+ * Version      : v1.0.0
+ * Description  : 
+ * This file is part of the VSCode task configuration.
+ * Its purpose is the definition of a GCC debugging tool.
+ *
+ * Notes:
+ *   GDB version 14.1.
+ *
+*/
 {
-    "version": "0.2.0",
-    "configurations": [
-      {
-   
-        "name": "GCC Debug",
-        "type": "cppdbg",
-        "request": "launch",
-        "program": "${workspaceFolder}/my_program",
-        "args": [],
-        "stopAtEntry": false,
-        "cwd": "${workspaceFolder}",
-        "environment": [],
-        "externalConsole": false,
-        "MIMode": "gdb",
-        "setupCommands": [
-          {
-            "description": "Enable pretty-printing for gdb",
-            "text": "-enable-pretty-printing",
-            "ignoreFailures": true
-          }
-        ],
-        "preLaunchTask": "build",
-        "miDebuggerPath": "/usr/bin/gdb",
-        "targetArchitecture": "x86_64",
-        "logging": {
-          "engineLogging": true
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "GCC Debug",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bin/program.exe",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/bin",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Enable pretty-printing for gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
         }
+      ],
+      "preLaunchTask": "Build with Makefile",
+      "miDebuggerPath": "C:\\msys64\\ucrt64\\bin\\gdb.exe",
+      "targetArchitecture": "x86_64",
+      "logging": {
+        "engineLogging": true
       }
-    ]
-  }
-  
+    }
+  ]
+}
