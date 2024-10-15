@@ -4,32 +4,33 @@
  * File Name    : tasks.json
  * Author       : Ali Allahverdiyev
  * Date Created : 15/10/2024
- * Version      : v1.0.0
+ * Last Edit    : 15/10/2024
+ 
  * Description  : 
- * This file is part of the VSCode task configuration.
- * Its purpose is the definition of a Makefile build tool.
+ *   This file is part of the VSCode task configuration.
+ *   Its purpose is the definition of a Makefile build tool.
  *
  * Notes:
  *   Program location explicitly defined.
  *   GDB version 14.1.
  *
 */
-
 {
-    "version": "2.0.0",
-    "tasks": [
-      {
-        "label": "Build with Makefile",
-        "type": "shell",
-        "command": "make",
-        "args": [],
-        "group": {
-          "kind": "build",
-          "isDefault": true
-        },
-        "problemMatcher": ["$gcc"],
-        "detail": "Makefile v2.0.0"
-      }
-    ]
-  }
-  
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build with Makefile",
+      "type": "shell",
+      "command": "make",
+      "args": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "detail": "Makefile v2.0.0"
+    }
+  ]
+}

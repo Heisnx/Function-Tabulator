@@ -1,34 +1,19 @@
-# [Project Name]
+# Function Tabulator
 
-[![Version](https://img.shields.io/badge/version-vX.Y.Z-blue.svg)](https://shields.io/)
-[![License](https://img.shields.io/badge/license-[Your License]-brightgreen.svg)](https://choosealicense.com/)
+[![Version](https://img.shields.io/badge/version-v1.1.1-blue.svg)](https://shields.io/)
+[![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)](https://choosealicense.com/)
 
 ## Overview
 
-**[Project Name]** is a [brief description of your project]. It [explains the core functionality, main purpose, or objective of the project]. This project is built using [programming languages/frameworks] and follows [project philosophy or methodology].
+**Function Tabulator** is a simple C program that calculates function values based on user input. The program takes in a starting value (`A`), a step coefficient (`C`), and a function value lower bound (`Y_MIN`). It calculates values of the function:
 
----
+\[ y = \frac{1}{\cos(x)} / \sqrt{1 + \sin(x^2)} \]
+
+The values are calculated iteratively while the function value remains greater than `Y_MIN`, but not more than 20 times. The program is designed with error handling for invalid input and offers formatted output in a tabular form.
 
 ## Features
 
-- [Feature 1: Brief description of the feature]
-- [Feature 2: Brief description of the feature]
-- [Feature 3: Brief description of the feature]
-
----
-
-## Getting Started
-
-### Prerequisites
-
-Before running this project, ensure you have the following:
-
-- [Dependency 1 (e.g., Python 3.12)]
-- [Dependency 2 (e.g., Node.js)]
-- [Any other requirements]
-
-### Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Heisnx/Function-Tabulator.git
+- **Dynamic Function Calculation**: Calculates function values based on user input.
+- **Custom Error Handling**: Ensures valid input for coefficients and function parameters.
+- **Formatted Output**: Displays calculated `x` and `y` values in a neatly formatted table.
+- **Precise Calculations**: Supports floating-point precision for accurate results.
